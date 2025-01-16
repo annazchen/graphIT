@@ -10,7 +10,7 @@ vMag = []
 vDir = []
 vTyp = []
 
-#vecSent = []
+
 
 ruler = nlp.add_pipe("entity_ruler", before="ner")
 patterns = [
