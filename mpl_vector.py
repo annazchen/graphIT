@@ -1,5 +1,21 @@
 import matplotlib.pyplot as plt
 import numpy as np
+from rulerMagv2 import *
+import array as arr
+
+
+
+def vector_add()
+    
+def to_nparray()
+
+def create_vector()
+    
+def show_vector()
+    
+    
+
+
 
 x1 = int (input("x1?: "))
 y1 = int (input("y1?: "))
