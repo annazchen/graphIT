@@ -4,19 +4,32 @@ from rulerMagv2 import *
 import array as arr
 
 
+#vector addition
+def vector_add(V1, V2): 
+    Vtotal = V1 + V2
+    return Vtotal
 
-def vector_add()
+
+#converts any existing array with exclusively numbers into a numpy array
+def to_nparray(array):  
+    V = np.array([])
+    for x in array:
+        V.append( float(array[x]))
+    return V    
+
+#adds vector to an existing plot according to 2 points, both w/ default val (0,0)   
+def create_vector(V1 = np.array([0, 0]), V2 = np.array([0, 0]), plt_color = 'r'): 
+    ax.quiver( V1[0], V1[1], V2[0], V2[1], angles = 'xy', scale_units = 'xy', scale = 1,  color  = plt_color)
+
+#shows a single vector NO IDEA IF THIS WORKS LOL
+def show_vector(V0, x_low = -2, x_up = 2, y_low = -2, y_up = 2): 
+    fig, ax = plt.subplots()
+    create_vector(V0)
+    ax.set_xlim([x_low, x_up])
+    ax.set_ylim([y_low, y_up])
+    plt.grid()
+    plt.show()
     
-def to_nparray()
-
-def create_vector()
-    
-def show_vector()
-    
-    
-
-
-
 x1 = int (input("x1?: "))
 y1 = int (input("y1?: "))
 x2 = int(input("x2?: "))
