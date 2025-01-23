@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
-from rulerMagv2 import *
+from rulerMagv2 import vMag
 import array as arr
 
 
